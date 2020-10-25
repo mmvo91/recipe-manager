@@ -11,10 +11,14 @@ cd ui
 npm install
 ```
 
-## Developing
+## Running for Development
 ```bash
+cd backend
+python asgi.py
+
+```bash
+cd ui
 npm start
-python backend/app.py
 ```
 
 Happy developing!
