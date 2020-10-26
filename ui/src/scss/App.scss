@@ -1,0 +1,24 @@
+@import "minty/variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+@import "minty/bootswatch";
+
+body {
+  background-color: $light;
+}
+
+div [href] {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: box-shadow .3s ease-in;
+}
+
+.recipe-image {
+  max-height: 500px;
+  max-width: 500px;
+}
