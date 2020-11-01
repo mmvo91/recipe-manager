@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import Recipes from "./pages/Recipes";
 import Recipe from "./pages/Recipe";
 import Imports from "./pages/Imports";
+import ImportedRecipe from "./pages/ImportedRecipe";
 
 library.add(faTrash, faPlus, faEdit)
 
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/recipes" component={Recipes}/>
                 <Route exact path="/recipes/:id" component={Recipe}/>
                 <Route exact path="/import" component={Imports}/>
+                <Route exact path="/import/:id" component={ImportedRecipe}/>
             </Switch>
         </Router>
     );
