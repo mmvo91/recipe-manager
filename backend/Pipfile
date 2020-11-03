@@ -15,6 +15,9 @@ sqlalchemy = "*"
 psycopg2 = "*"
 pydantic = {extras = ["dotenv"], version = "*"}
 pyhumps = "*"
+bs4 = "*"
+pint = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
