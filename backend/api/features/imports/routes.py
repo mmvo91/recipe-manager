@@ -17,6 +17,17 @@ def get_recipe_imports(
     return services.get_imported_recipes(db, imported=imported)
 
 
+@imports_router.post(
+    "/",
+    response_model=schemas.SingleRecipeImport
+)
+def create_recipe_import(
+    url: schemas.URL,
+    db: Session = Depends(get_db),
+):
+    return services.create_recipe_by_import(url.url, db)
+
+
 @imports_router.get("/{imported_id}", response_model=schemas.SingleRecipeImport)
 def get_recipe_import(
     imported_id: int,
