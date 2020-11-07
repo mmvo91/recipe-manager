@@ -18,6 +18,8 @@ pyhumps = "*"
 bs4 = "*"
 pint = "*"
 requests = "*"
+python-jose = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
 
 [requires]
 python_version = "3.7"
