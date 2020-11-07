@@ -32,6 +32,7 @@ const Navigation = () => {
                     <NavLink href={"/"}>Home</NavLink>
                     <NavDropdown title="Recipes" id="collapsible-nav-dropdown">
                         <NavDropDownItemLink href="/recipes">Recipes</NavDropDownItemLink>
+                        <NavDropDownItemLink href="/recipes/new">New</NavDropDownItemLink>
                         <NavDropDownItemLink href="/import">Import</NavDropDownItemLink>
                     </NavDropdown>
                 </Nav>

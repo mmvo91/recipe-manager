@@ -7,6 +7,7 @@ import {faEdit, faPlus, faTrash} from '@fortawesome/free-solid-svg-icons';
 import Navigation from "./components/Navigation";
 import Recipes from "./pages/Recipes";
 import Recipe from "./pages/Recipe";
+import NewRecipe from "./pages/NewRecipe";
 import Imports from "./pages/Imports";
 import ImportedRecipe from "./pages/ImportedRecipe";
 
@@ -19,6 +20,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Recipes}/>
                 <Route exact path="/recipes" component={Recipes}/>
+                <Route exact path="/recipes/new" component={NewRecipe}/>
                 <Route exact path="/recipes/:id" component={Recipe}/>
                 <Route exact path="/import" component={Imports}/>
                 <Route exact path="/import/:id" component={ImportedRecipe}/>
