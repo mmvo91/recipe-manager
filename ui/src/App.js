@@ -5,6 +5,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faEdit, faPlus, faTrash} from '@fortawesome/free-solid-svg-icons';
 
 import Navigation from "./components/Navigation";
+import Login from "./pages/Login";
 import Recipes from "./pages/Recipes";
 import Recipe from "./pages/Recipe";
 import NewRecipe from "./pages/NewRecipe";
@@ -18,6 +19,7 @@ function App() {
         <Router>
             <Navigation/>
             <Switch>
+                <Route exact path="/login" component={Login}/>
                 <Route exact path="/" component={Recipes}/>
                 <Route exact path="/recipes" component={Recipes}/>
                 <Route exact path="/recipes/new" component={NewRecipe}/>
