@@ -4,6 +4,7 @@ import './scss/App.scss';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faEdit, faPlus, faTrash} from '@fortawesome/free-solid-svg-icons';
 
+import PrivateRoute from "./components/PrivateRoute";
 import Navigation from "./components/Navigation";
 import Login from "./pages/Login";
 import Recipes from "./pages/Recipes";
@@ -20,12 +21,12 @@ function App() {
             <Navigation/>
             <Switch>
                 <Route exact path="/login" component={Login}/>
-                <Route exact path="/" component={Recipes}/>
-                <Route exact path="/recipes" component={Recipes}/>
-                <Route exact path="/recipes/new" component={NewRecipe}/>
-                <Route exact path="/recipes/:id" component={Recipe}/>
-                <Route exact path="/import" component={Imports}/>
-                <Route exact path="/import/:id" component={ImportedRecipe}/>
+                <PrivateRoute exact path="/" component={Recipes}/>
+                <PrivateRoute exact path="/recipes" component={Recipes}/>
+                <PrivateRoute exact path="/recipes/new" component={NewRecipe}/>
+                <PrivateRoute exact path="/recipes/:id" component={Recipe}/>
+                <PrivateRoute exact path="/import" component={Imports}/>
+                <PrivateRoute exact path="/import/:id" component={ImportedRecipe}/>
             </Switch>
         </Router>
     );
