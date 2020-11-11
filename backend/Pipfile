@@ -20,6 +20,8 @@ pint = "*"
 requests = "*"
 python-jose = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
+numpy = "==1.19.3"
+pandas = "*"
 
 [requires]
 python_version = "3.7"
