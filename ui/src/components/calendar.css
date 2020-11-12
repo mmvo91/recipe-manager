@@ -1,0 +1,40 @@
+.SelectedWeekExample .DayPicker-Month {
+    border-collapse: separate;
+}
+.SelectedWeekExample .DayPicker-WeekNumber {
+    outline: none;
+}
+.SelectedWeekExample .DayPicker-Day {
+    outline: none;
+    border: 1px solid transparent;
+}
+.SelectedWeekExample .DayPicker-Day--hoverRange {
+    background-color: #EFEFEF !important;
+}
+
+.SelectedWeekExample .DayPicker-Day--selectedRange {
+    background-color: #addacd !important;
+    border-top-color: #78C2AD;
+    border-bottom-color: #78C2AD;
+    border-left-color: #addacd;
+    border-right-color: #addacd;
+}
+
+.SelectedWeekExample .DayPicker-Day--selectedRangeStart {
+    background-color: #78C2AD !important;
+    border-left: 1px solid #78C2AD;
+}
+
+.SelectedWeekExample .DayPicker-Day--selectedRangeEnd {
+    background-color: #78C2AD !important;
+    border-right: 1px solid #78C2AD;
+}
+
+.SelectedWeekExample .DayPicker-Day--selectedRange:not(.DayPicker-Day--outside).DayPicker-Day--selected,
+.SelectedWeekExample .DayPicker-Day--hoverRange:not(.DayPicker-Day--outside).DayPicker-Day--selected {
+    border-radius: 0 !important;
+    color: black !important;
+}
+.SelectedWeekExample .DayPicker-Day--hoverRange:hover {
+    border-radius: 0 !important;
+}
