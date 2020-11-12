@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Recipes from "./pages/Recipes";
 import Recipe from "./pages/Recipe";
 import NewRecipe from "./pages/NewRecipe";
+import Planner from "./pages/Planner";
 import Imports from "./pages/Imports";
 import ImportedRecipe from "./pages/ImportedRecipe";
 
@@ -25,6 +26,7 @@ function App() {
                 <PrivateRoute exact path="/recipes" component={Recipes}/>
                 <PrivateRoute exact path="/recipes/new" component={NewRecipe}/>
                 <PrivateRoute exact path="/recipes/:id" component={Recipe}/>
+                <PrivateRoute exact path="/planner" component={Planner}/>
                 <PrivateRoute exact path="/import" component={Imports}/>
                 <PrivateRoute exact path="/import/:id" component={ImportedRecipe}/>
             </Switch>
